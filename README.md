@@ -1,6 +1,10 @@
 # SimCaptain-client
 Source code for https://releaser.itch.io/simcaptain
 
+It contains the images, controls the UI of what will show on what time, collect input and communicate with server through HTTP request.
+
+To use a different server, replace the hardcoded URL `https://empire-production-estate-boat.trycloudflare.com` to new URL of the server.
+
 ## Get started
 1. Get Ren'Py: https://www.renpy.org/latest.html
 2. Open Ren'Py and setup project directory
