@@ -1,4 +1,4 @@
-﻿# 遊戲腳本位於此檔案。
+# 遊戲腳本位於此檔案。
 
 # 聲明該遊戲使用的角色。 color 參數
 # 為角色的名稱著色。
@@ -116,21 +116,21 @@ label start:
                         break
                     message["content"] = " ".join(tmp[1:]).strip(': ')
                 if message['id'] == 0:
-                    renpy.call("vice_say", message["content"])
+                    renpy.call_in_new_context("vice_say", message["content"])
                 elif message['id'] == 1:
-                    renpy.call("gunnery_say", message["content"])
+                    renpy.call_in_new_context("gunnery_say", message["content"])
                 elif message['id'] == 2:
-                    renpy.call("torpedo_say", message["content"])
+                    renpy.call_in_new_context("torpedo_say", message["content"])
                 elif message['id'] == 3:
-                    renpy.call("nav_say", message["content"])
+                    renpy.call_in_new_context("nav_say", message["content"])
                 elif message['id'] == 4:
-                    renpy.call("env_say", message["content"])
+                    renpy.call_in_new_context("env_say", message["content"])
                 elif message['id'] == 5:
-                    renpy.call("env_say", message["content"])
+                    renpy.call_in_new_context("env_say", message["content"])
                 elif message['id'] == 6:
-                    renpy.call("env_say", message["content"])
+                    renpy.call_in_new_context("env_say", message["content"])
                 if message['continue'] is False:
-                    renpy.call("get_input")
+                    renpy.call_in_new_context("get_input")
 
         jump loop
 
